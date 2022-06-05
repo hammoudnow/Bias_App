@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biased App</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Css style -->
+    <link rel="stylesheet" href="/choices.css">
+
+    <!-- Googel Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <img src="/img/logo.png" alt="" class="logo">
+
+    <a href="/" class="button go-home">Go Home</a>
+
+    <!-- Home Section -->
+
+    <section id="main" class="home">
+        <div class="container">
+
+            <h1>Bias In Recruitment </h1>
+            <hr style="border: 0; background-color: #E6695A; width: 50%; height: 4px; margin: auto; opacity: 80%;">
+            <h2> We want to help you by automating this process. Machine Learning can help you pick up the right candidate for a job description. </h2>
+            <iframe src="https://drive.google.com/file/d/1lheVNL08AnA781KeBFidjMGjPsx5gCVR/preview" style="margin-top: 30px;" height="300px" width="500px" allow="autoplay"></iframe>
+            <h2> But before, it will need to learn from available data. We already have 3 valuable datasets to train our algorithm. Please choose one of the below to start the data training :</h2>
+
+            <form action="/machine-learning-choices" method="POST">
+
+                <div class="buttons-div">
+
+                    <div class="form-check">
+                        <input type="radio" class="btn-check choices1" name="frChoice" id="option1" autocomplete="off">
+                        <label class="btn btn-secondary" for="option1">Successfully hired employees at the company</label>
+                        <button class="hover hover-1"></button>
+                        <span class="info-content-1">For this dataset, we have collected all the CVs of candidates that were successfully hired at our company. That included more than 1000 resumes in the past 8 years.</span>
+                    </div> 
+                 
+                    <div class="form-check">
+                        <input type="radio" class="btn-check choices2" name="scChoice" id="option2" autocomplete="off">
+                        <label class="btn btn-secondary" for="option2">Top 10% performers at the company</label>
+                        <button class="hover hover-2"></button>
+                        <span class="info-content-2">For this dataset, we have collected all the CVs of best performing candidates that got fast promotions, achieved their targets constantly, or been recognized through awards in the past years</span>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="btn-check choices3" name="thrChoice" id="option3" autocomplete="off" >
+                        <label class="btn btn-secondary" for="option3">Similar “Product Manager” profiles in Netherlands</label>
+                        <button class="hover hover-3"></button>
+                        <span class="info-content-3">For this dataset, we have collected many CVs of candidates of Product Manager role in the Netherlands having the relevant skills.</span>
+                    </div>
+
+                </div>
+
+        
+                <div class="buttons-div">
+                    <button type="submit" class="button first-button"> To the next step </button>
+                </div>
+                    
+            
+                
+            </form>
+            
+
+        </div>
+    </section>
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Js file -->
+    <script src="/index.js"></script>
+
+</body>
+</html>

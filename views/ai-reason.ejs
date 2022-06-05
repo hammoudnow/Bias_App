@@ -1,0 +1,45 @@
+<%- include('partials/header.ejs')  %>
+
+    <!-- Home Section -->
+
+    <section id="main" class="home">
+        <div class="container">
+
+            <h1>Bias In Recruitment </h1>
+            <hr style="border: 0; background-color: #E6695A; width: 50%; height: 4px; margin: auto; opacity: 80%;">
+            <h2 style="margin-top: 60px;"> How the Algorithm made such decision?
+            </h2>
+
+            <div class="row">
+                <div class="col-lg-9 align-self-start">
+                
+                    <iframe src="<%= video %> " style="margin-top: 30px;" height="300px" width="500px" allow="autoplay"></iframe>
+                    <div class="reason-div">
+                        <p>Recent Successful Hires were of:</p><br>
+                        <% aiReason.forEach(element => { %>
+                            <p><%= element %> </p>
+                        <% });  %>
+                    </div>
+                    
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="last-div">
+                        <p>If the data that was used to train the Algorithm is biased (demographics, gender, location,..)
+                            then the Machine learning will try replicate them.
+                            This can be shown clearly in the output of the Algorithm !
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons-div">
+                <a href="/summary" class="button first-button"> Summary </a>
+            </div>
+            
+
+        </div>
+    </section>
+
+
+<%- include('partials/footer.ejs')  %>

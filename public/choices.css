@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
+
+/* Global Styles */
+
+body{
+    margin: 0 !important;
+    font-family: 'Mulish', sans-serif;
+    position: relative;
+}
+
+/* Global Styles buttons */
+
+a{
+    text-decoration: none;
+}
+
+
+h1{
+    font-family: 'Koulen';  
+}
+
+
+.logo{
+    top: 10px;
+    left: 20px;
+    position: absolute;
+    width: 100px;
+}
+
+.buttons-div{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.button{
+    border: 2px solid #E6695A;
+    background-color:#E6695A;
+    padding: 5px 40px;
+    border-radius: 5px;
+    font-family: 'Koulen';
+    color: #ffeeee;
+    font-size: 25px;
+    display: inline-block;
+}
+
+.first-button:hover , .go-home:hover{
+    color: #E6695A;
+    background-color: #ffeeee;
+    transition: ease-out 0.9s;
+}
+
+/* Global Styles Main Section */
+
+#main{
+    background-color: #ffeeee;
+    height: 100%;
+    min-height: 100vh !important;
+    text-align: center;
+    justify-content: center;
+    color: #E6564E;
+}
+
+#main h1{
+    color: #E6564E;
+    font-size: 50px; 
+    margin: 0;
+    padding-top: 60px;
+}
+
+
+/* Global style Go Home button */
+
+.go-home{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px !important;
+    padding: 5px 15px !important;
+    border-radius: 5px;
+}
+
+
+/* Home Section */
+
+.home h2{
+    padding-top: 60px;
+    font-size: 35px;
+}
+
+/* Choose Cvs Section */
+
+.choose-cvs h2{
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+/* Cards */
+.cards{
+    margin-top: 30px;
+    padding: 50px;
+}
+
+.cards h3{
+    padding-bottom: 35px !important;
+}
+
+.card{
+    background-color: #D7CDCC;
+    height: 550px;
+    margin: auto 0;
+    margin-top: 20px;
+    padding: 5%;
+    border: 0;
+}
+
+.blinded{
+    height: 300px !important;
+}
+
+.choose-card-button{
+    border: 2px solid #E6695A;
+    margin: 20px 0;
+    border-radius: 35px;
+    padding: 10px 50px;
+    background-color: #E6695A ;
+    color: #ffeeee;
+}
+
+.card-img-container{
+    float: right;
+}
+
+.card-img-container img{
+    float: right;
+}
+
+.card-img{
+    width: 90px;
+    border-radius: 50%;
+    float: left;
+}
+
+.card-content{
+    float: left;
+}
+
+.card-content-first h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.card-content-first p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 27px;
+    text-align: left;
+    padding-left: 90px;
+
+}
+
+.card-content-secound p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    text-align: left;
+    font-size: 25px;
+
+}
+
+.card-content-third p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 25px !important;
+
+}
+
+.chosen-more{
+   font-size: 40px; 
+   display: none;
+}
+
+.show{
+    display: inline-block !important;
+    position: absolute;
+    transition: ease-out 0.9s;
+}
+
+.btn-secondary{
+    border: 2px solid #E6695A !important;
+    color: #ffeeee !important;
+    background-color: #E6695A !important;
+    margin-top: 30px !important;
+    width: 600px;
+    padding: 20px 20px;
+    font-size: 25px;
+    font-family: 'Koulen';
+}
+
+.btn-secondary:hover{
+    border: 2px solid #E6695A !important;
+    color: #E6695A !important;
+    background-color: #ffeeee !important;
+    transition: ease-out 0.9s;
+}
+
+.btn-secondary:checked{
+    border: 2px solid #E6695A !important;
+    color: #E6695A !important;
+    background-color: #ffeeee !important;
+    transition: ease-out 0.9s;
+}
+
+ .btn-check:focus+.btn, .btn:focus{
+    color: #E6695A !important;
+    background-color: #ffeeee !important;
+    transition: ease-out 0.9s;
+    box-shadow: none;
+}
+.choices-div{
+    margin-top: 30px;
+}
+
+.robot{
+    background-color: #fff !important;
+}
+
+.last-div{
+    font-size: 30px;
+    margin-top: 100px;
+    padding: 15%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.reason-div{
+    font-size: 30px;
+    margin-top: 30px;
+    padding: 8%;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.info-content-1, .info-content-2, .info-content-3{
+    display: none ;
+    background-color: #fff;
+    color: black;
+    padding: 2%;
+    transition: ease-out 0.9s;
+}
+
+.hover{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(179, 179, 179);
+    border: 0;
+}
+
+
+/* #E6564E */
+
+/* #E6564E */
+
+/* #4346E7 */
+
+/* #E1E9FD */

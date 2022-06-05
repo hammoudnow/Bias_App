@@ -1,0 +1,197 @@
+<%- include('partials/header.ejs')  %>
+    <!-- Choose Cvs Section -->
+
+
+    <section id="main" class="choose-cvs">
+        <div class="container">
+
+        
+            <!-- Headers -->
+            <h1>Bias In Recruitment </h1>
+            <hr style="border: 0; background-color: #E6695A; width: 50%; height: 4px; margin: auto; opacity: 80%;">
+
+            <!-- First choose -->
+
+            <div class="cards">
+
+                <h3 style="font-size: 45px;"> Your first choice</h3>
+
+                
+                <div class="row justify-content-md-center">
+
+                    <%frChoice.forEach(applicant => { %>
+                    
+                        <div class="col-lg-6 content">
+                            <div class="card">
+
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <img class="card-img" src="/img/<%= applicant.image %>.png" alt="">
+                                    </div>
+
+                                    <div class="col-lg-10 card-content-first">
+
+                                        <h2> <%= applicant.name %> </h2>
+                                        <p> 
+                                            Lives: <%= applicant.live %> <br>
+                                            Age: <%= applicant.age %> <br>
+                                            Nationality: <%= applicant.nationality %> 
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="row">
+                                    
+                                    <div class="card-content-secound">
+                                        <p>
+                                            Experience: <%= applicant.experience %> <br>
+                                            Degree: <%= applicant.degree %>
+
+                                        </p>
+                                    </div>
+                                    <div class="card-content-third">
+                                        <p>
+                                            <span style="color: #000000; font-size: 27px;">Skills:</span>  <%= applicant.skills %>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            
+                            
+                            </div>   
+                        </div>
+                    
+                    <% });%>
+
+                </div>
+
+            </div>
+
+            <!-- Blinded choose -->
+
+            <div class="cards">
+
+                <h3 style="font-size: 45px;"> Your secound choice</h3>
+                
+                <div class="row justify-content-md-center">
+
+                    <%scChoice.forEach(applicant => { %>
+                    
+                        <div class="col-lg-6">
+                            <div class="card">
+
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <img class="card-img" src="/img/<%= applicant.image %>.png" alt="">
+                                    </div>
+
+                                    <div class="col-lg-10 card-content-first">
+
+                                        <h2> <%= applicant.name %> </h2>
+                                        <p> 
+                                            Lives: <%= applicant.live %> <br>
+                                            Age: <%= applicant.age %> <br>
+                                            Nationality: <%= applicant.nationality %> 
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="row">
+                                    
+                                    <div class="card-content-secound">
+                                        <p>
+                                            Experience: <%= applicant.experience %> <br>
+                                            Degree: <%= applicant.degree %>
+
+                                        </p>
+                                    </div>
+                                    <div class="card-content-third">
+                                        <p>
+                                            <span style="color: #000000; font-size: 27px;">Skills:</span>  <%= applicant.skills %>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            
+                            
+                            </div>   
+                        </div>
+                    
+                    <% });%>
+
+                </div>
+
+            </div>
+
+            <!-- ai choose -->
+
+            <div class="cards">
+
+                <h3 style="font-size: 45px;"> Machine Learning recommendation</h3>
+                
+                <div class="row justify-content-md-center">
+
+                    <%aiChoices.forEach(applicant => { %>
+                    
+                        <div class="col-lg-6">
+                            <div class="card">
+
+                                <div class="row">
+                                    <div class="col-lg-2">
+                                        <img class="card-img" src="/img/<%= applicant.image %>.png" alt="">
+                                    </div>
+
+                                    <div class="col-lg-10 card-content-first">
+
+                                        <h2> <%= applicant.name %> </h2>
+                                        <p> 
+                                            Lives: <%= applicant.live %> <br>
+                                            Age: <%= applicant.age %> <br>
+                                            Nationality: <%= applicant.nationality %> 
+                                        </p>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="row">
+                                    
+                                    <div class="card-content-secound">
+                                        <p>
+                                            Experience: <%= applicant.experience %> <br>
+                                            Degree: <%= applicant.degree %>
+
+                                        </p>
+                                    </div>
+                                    <div class="card-content-third">
+                                        <p>
+                                            <span style="color: #000000; font-size: 27px;">Skills:</span>  <%= applicant.skills %>
+                                        </p>
+                                    </div>
+                                    
+                                </div>
+                            
+                            
+                            </div>   
+                        </div>
+                    
+                    <% });%>
+
+                </div>
+
+            </div>
+
+
+            
+
+            <div class="buttons-div">
+                <a href="/ai-reason" type="submit" class="button first-button"> How did the algorithm choose those? </a>
+            </div>
+        
+        
+        
+        </div>
+    </section>
+
+<%- include('partials/footer.ejs')  %>

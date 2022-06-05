@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Face Detection API</title>
+    <style>
+        body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button{
+        margin-top: 150px;
+        border: 2px solid #E6695A;
+        background-color:#E6695A;
+        padding: 5px 40px;
+        border-radius: 5px;
+        font-family: 'Koulen';
+        color: #ffeeee;
+        font-size: 25px;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .container{
+        position: fixed;
+        top: -120px;
+    }
+
+    .first-button:hover {
+        color: #E6695A;
+        background-color: #ffeeee;
+        transition: ease-out 0.9s;
+    }
+
+    canvas {
+      position: absolute;
+    }
+
+    </style>
+  </head>
+  <body>
+    <video id="video" width="720" height="560" autoplay muted></video>
+
+    <div class="container"> 
+        <a href="/conclusion" class="button first-button">Next</a>
+        <p><span>Your age is:</span> <span id="age"></span> </p>
+        <p><span>Your gender is:</span> <span id="gender"></span> </p>
+    </div>
+
+
+    
+
+    <script src="/face-api.min.js"></script>
+    <script src="/face.js"></script>
+  </body>
+</html>
